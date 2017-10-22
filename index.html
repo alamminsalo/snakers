@@ -2,7 +2,7 @@
 <html>
     <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-	<title>Snake wasm</title>
+	<title>Snake Game</title>
     </head>
     <body>
 	<div class="fill-height flex align-items-center">
@@ -12,7 +12,7 @@
 
 		    <!-- Start view -->
 		    <div v-if="!running">
-			<label class="text-center">A game of snake?</label>
+			<label class="text-center">Play snake?</label>
 			<button class="six columns offset-by-three" v-on:click="start">Let's play snake!</button>
 		    </div>
 
@@ -25,6 +25,19 @@
 			    </div>
 			</div>
 		    </div>
+		</div>
+
+		<!-- Info -->
+		<div class="ten columns offset-by-one text-center">
+		    <small>
+			Project on <a href="https://github.com/alamminsalo/snakewasm">Github</a>
+			|
+			Powered by 
+			<a href="https://vuejs.org">Vue.js</a> and
+			<a href="https://www.rust-lang.org">Rust</a>
+		    </small>
+		    <br/>
+		    <small>
 		</div>
 	    </div>
 	</div>

@@ -28553,7 +28553,7 @@ exports = module.exports = __webpack_require__(49)(undefined);
 
 
 // module
-exports.push([module.i, "\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.grow {\n  flex: 1;\n}\n\n.grid-cell {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.grid-item {\n  border-radius: 50%;\n  height: 55%;\n  width: 55%;\n  background-color: #eee;\n  transition: all 0.2s ease-out;\n}\n\n.snake {\n  border-radius: 10%;\n  height: 75%;\n  width: 75%;\n  background-color: #1e8;\n}\n\n.food {\n  border-radius: 10%;\n  height: 50%;\n  width: 50%;\n  background-color: #f15;\n}\n\n.fill-height {\n  height: 99vh;\n}\n\n.flex {\n  display: flex;\n}\n\n.align-items-center {\n  align-items: center;\n}\n\n.text-center {\n  text-align: center;\n}\n\n", ""]);
+exports.push([module.i, "\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.grow {\n  flex: 1;\n}\n\n.grid-cell {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.grid-item {\n  border-radius: 50%;\n  height: 50%;\n  width: 50%;\n  background-color: #eee;\n  transition: all 0.1s;\n}\n\n.snake {\n  border-radius: 10%;\n  height: 75%;\n  width: 75%;\n  background-color: #1e8;\n}\n\n.food {\n  border-radius: 10%;\n  height: 55%;\n  width: 55%;\n  background-color: #f15;\n}\n\n.fill-height {\n  height: 99vh;\n}\n\n.flex {\n  display: flex;\n}\n\n.align-items-center {\n  align-items: center;\n}\n\n.text-center {\n  text-align: center;\n}\n\n", ""]);
 
 // exports
 
@@ -28794,13 +28794,13 @@ let app = new __WEBPACK_IMPORTED_MODULE_0_vue_dist_vue_js___default.a({
 
         // Setup keyEvents
         window.addEventListener('keydown', (e) => {
-          if (e.keyCode == 37)
+          if (e.keyCode == 37 || e.keyCode == 65) // left / a
             app.left();
-          if (e.keyCode == 38)
+          if (e.keyCode == 38 || e.keyCode == 87) // up / w
             app.up();
-          if (e.keyCode == 39)
+          if (e.keyCode == 39 || e.keyCode == 68) // right / d
             app.right();
-          if (e.keyCode == 40)
+          if (e.keyCode == 40 || e.keyCode == 83) // down / s
             app.down();
         });
 

@@ -31,15 +31,11 @@
 		    </div>
 
 		    <!-- Mobile buttons -->
-		    <div v-show="running" class="mobile footer flex align-items-center">
-			<div class="six columns flex">
-			    <div id="left-btn" class="btn fa fa-arrow-left"></div>
-			    <div id="right-btn" class="btn fa fa-arrow-right"></div>
-			</div>
-			<div class="six columns flex justify-content-end">
-			    <div id="up-btn" class="btn fa fa-arrow-up"></div>
-			    <div id="down-btn" class="btn fa fa-arrow-down"></div>
-			</div>
+		    <div v-show="running" class="mobile footer flex">
+			    <div id="left-btn" class="btn fa fa-arrow-left rotate-45"></div>
+			    <div class="grow"></div>
+
+			    <div id="right-btn" class="btn fa fa-arrow-right rotate-45"></div>
 		    </div>
 		</div>
 

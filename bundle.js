@@ -28553,7 +28553,7 @@ exports = module.exports = __webpack_require__(49)(undefined);
 
 
 // module
-exports.push([module.i, "\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.grow {\n  flex: 1;\n}\n\n.grid-cell {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.grid-item {\n  border-radius: 50%;\n  height: 50%;\n  width: 50%;\n  background-color: #eee;\n  transition: all 0.1s;\n}\n\n.snake {\n  border-radius: 10%;\n  height: 75%;\n  width: 75%;\n  background-color: #1e8;\n}\n\n.food {\n  border-radius: 10%;\n  height: 55%;\n  width: 55%;\n  background-color: #f15;\n}\n\n.fill-height {\n  height: 99vh;\n}\n\n.flex {\n  display: flex;\n}\n\n.align-items-center {\n  align-items: center;\n}\n\n.text-center {\n  text-align: center;\n}\n\n", ""]);
+exports.push([module.i, "\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.grow {\n  flex: 1;\n}\n\n.grid-cell {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.grid-item {\n  border-radius: 50%;\n  height: 50%;\n  width: 50%;\n  background-color: #eee;\n  transition: all 0.1s;\n}\n\n.snake {\n  border-radius: 10%;\n  height: 75%;\n  width: 75%;\n  background-color: #1e8;\n}\n\n.food {\n  border-radius: 10%;\n  height: 55%;\n  width: 55%;\n  background-color: #f15;\n}\n\n.fill-height {\n  height: 99vh;\n}\n\n.flex {\n  display: flex;\n}\n\n.align-items-center {\n  align-items: center;\n}\n\n.justify-content-end {\n  justify-content: flex-end;\n}\n\n.align-items-end  {\n  align-items: flex-end;\n}\n\n.text-center {\n  text-align: center;\n}\n\n.footer {\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n\n@media (min-width: 750px) {\n  .mobile {\n    display: none;\n  }\n}\n\n.fa {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.fa:before {\n  font-family: FontAwesome;\n}\n\n.btn {\n  border-radius: 50%;\n  height: 4em;\n  width: 4em;\n  position: relative;\n  background-color: #ddd;\n  margin: 0.4em;\n}\n\n.btn:hover {\n  background-color: #aaa;\n}\n\n", ""]);
 
 // exports
 
@@ -28802,6 +28802,20 @@ let app = new __WEBPACK_IMPORTED_MODULE_0_vue_dist_vue_js___default.a({
             app.right();
           if (e.keyCode == 40 || e.keyCode == 83) // down / s
             app.down();
+        });
+
+        // Mobile btn listeners
+        document.getElementById('up-btn').addEventListener('mousedown', (e) => {
+          app.up();
+        });
+        document.getElementById('down-btn').addEventListener('mousedown', (e) => {
+          app.down();
+        });
+        document.getElementById('left-btn').addEventListener('mousedown', (e) => {
+          app.left();
+        });
+        document.getElementById('right-btn').addEventListener('mousedown', (e) => {
+          app.right();
         });
 
         // Setup ticker function

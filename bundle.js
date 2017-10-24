@@ -28553,7 +28553,7 @@ exports = module.exports = __webpack_require__(49)(undefined);
 
 
 // module
-exports.push([module.i, "\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.grow {\n  flex: 1;\n}\n\n.grid-cell {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.grid-item {\n  border-radius: 50%;\n  height: 50%;\n  width: 50%;\n  background-color: #eee;\n  transition: all 0.1s;\n}\n\n.snake {\n  border-radius: 10%;\n  height: 75%;\n  width: 75%;\n  background-color: #1e8;\n}\n\n.food {\n  border-radius: 10%;\n  height: 55%;\n  width: 55%;\n  background-color: #f15;\n}\n\n.fill-height {\n  height: 99vh;\n}\n\n.flex {\n  display: flex;\n}\n\n.align-items-center {\n  align-items: center;\n}\n\n.rotate-45 {\n  -ms-transform: rotate(45deg);\n  -moz-transform: rotate(45deg);\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}\n\n.justify-content-center {\n  justify-content: center;\n}\n\n.justify-content-end {\n  justify-content: flex-end;\n}\n\n.align-items-end  {\n  align-items: flex-end;\n}\n\n.text-center {\n  text-align: center;\n}\n\n.footer {\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n\n@media (min-width: 750px) {\n  .mobile {\n    display: none;\n  }\n}\n\n.fa {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.fa:before {\n  font-family: FontAwesome;\n}\n\n.btn {\n  border-radius: 50%;\n  height: 4em;\n  width: 4em;\n  background-color: #ddd;\n  margin: 1em;\n  margin-top: 0;\n}\n\n.btn:hover {\n  background-color: #aaa;\n}\n\n", ""]);
+exports.push([module.i, "\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.grow {\n  flex: 1;\n}\n\n.grid-cell {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.grid-item {\n  border-radius: 50%;\n  height: 50%;\n  width: 50%;\n  background-color: #eee;\n  transition: all 0.1s;\n}\n\n.snake {\n  border-radius: 10%;\n  height: 75%;\n  width: 75%;\n  background-color: #1e8;\n}\n\n.food {\n  border-radius: 10%;\n  height: 55%;\n  width: 55%;\n  background-color: #f15;\n}\n\n.fill-height {\n  height: 99vh;\n}\n\n.flex {\n  display: flex;\n}\n\n.align-items-center {\n  align-items: center;\n}\n\n.rotate-neg-45 {\n  -ms-transform: rotate(-45deg);\n  -moz-transform: rotate(-45deg);\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}\n\n.justify-content-center {\n  justify-content: center;\n}\n\n.justify-content-end {\n  justify-content: flex-end;\n}\n\n.align-items-end  {\n  align-items: flex-end;\n}\n\n.text-center {\n  text-align: center;\n}\n\n.footer {\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n\n@media (min-width: 750px) {\n  .mobile {\n    display: none;\n  }\n}\n\n.fa {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.fa:before {\n  font-family: FontAwesome;\n}\n\n.btn {\n  border-radius: 50%;\n  height: 4em;\n  width: 4em;\n  background-color: #ddd;\n  margin: 1em;\n  margin-top: 0;\n}\n\n.btn:hover {\n  background-color: #aaa;\n}\n\n", ""]);
 
 // exports
 
@@ -28806,11 +28806,11 @@ let app = new __WEBPACK_IMPORTED_MODULE_0_vue_dist_vue_js___default.a({
 
         // Mobile btn listeners
         document.getElementById('left-btn').addEventListener('mousedown', (e) => {
-          app.up();
+          app.down();
           app.left();
         });
         document.getElementById('right-btn').addEventListener('mousedown', (e) => {
-          app.down();
+          app.up();
           app.right();
         });
 
